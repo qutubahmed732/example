@@ -1,0 +1,129 @@
+.search-section {
+    background-color: #eef0f1;
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding-block: .5rem;
+    padding-inline: .5rem;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: .5rem;
+}
+
+.input-area {
+    background-color: white;
+    border-radius: 10px;  
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding-block: 10px;
+    padding-right: 10px;
+
+    input {
+        width: 85%;
+        background-image: url("images/magnifying-glass.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: -10px;
+        padding-block: 1.2rem;
+        padding-left: 3.5rem;
+        font-size: 1.5rem;
+        transition: all .5s ease;
+        border: none;
+        outline: none;
+
+        &:focus {
+            padding-left: 1rem;
+            background-position: -65px;
+        }
+    }
+
+    button {
+        width: 15%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: #09757a;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+
+
+.domain-offer-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    &:hover {
+        border: 1px solid #eef0f1;
+        background-color: white;
+        
+    }
+
+    &:hover a{
+        border: none;
+        color: #00838C;
+    }
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+
+    .domain-price {
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .search-section{
+        grid-template-columns: 1fr;
+        width: 98%;
+    }
+
+    .input-area {
+        input {
+            background-image: none;
+            padding-left: 1rem;
+        }
+    }
+
+
+    .domain-offer-div{
+        display: none;
+    }
+}
+
+@media(max-width: 450px){
+    .input-area {
+        padding: 0;
+        
+        input {
+            width: 75%;
+            padding: 0;
+            font-size: 1rem;
+            transition: none;
+        }
+
+        button {
+            width: 25%;
+            font-size: .9rem;
+            font-weight: normal;
+        }
+    }
+}

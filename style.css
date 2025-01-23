@@ -1,0 +1,244 @@
+#nav {
+  color: white;
+  background-color: black;
+  padding-block: 0.9rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#nav .nav-left-side,
+#nav .nav-right-side {
+  display: flex;
+}
+#nav .hidden {
+  display: none;
+}
+#nav .nav-left-side .logo {
+  width: 150px;
+  fill: white;
+}
+#nav .nav_items {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#nav .nav_items div {
+  display: flex;
+  align-items: center;
+}
+#nav .nav-right-side {
+  gap: 2rem;
+}
+#nav .nav-right-side div {
+  display: flex;
+  align-items: center;
+}
+
+#second-nav {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding-left: 2rem;
+  width: 40%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in;
+}
+#second-nav ul:nth-of-type(2) li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#second-nav ul {
+  list-style: none;
+}
+
+.close {
+  display: none;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1365px) {
+  #nav {
+    align-items: center;
+    justify-content: initial;
+  }
+  #nav .hidden {
+    display: block;
+  }
+  #nav .nav_items {
+    display: none;
+  }
+  #nav .menu-btn {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+  }
+  .nav-right-side {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  #nav .nav-right-side {
+    display: none;
+  }
+  #nav .menu-btn {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+  }
+  svg {
+    width: 100px;
+  }
+  #second-nav {
+    width: 90%;
+    display: none;
+  }
+  #second-nav div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+  }
+  #second-nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  #second-nav > ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .close {
+    display: block;
+  }
+}
+.search-section {
+  background-color: #eef0f1;
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 0.5rem;
+}
+
+.input-area {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding-block: 10px;
+  padding-right: 10px;
+}
+.input-area input {
+  width: 85%;
+  background-image: url("images/magnifying-glass.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -10px;
+  padding-block: 1.2rem;
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+  border: none;
+  outline: none;
+}
+.input-area input:focus {
+  padding-left: 1rem;
+  background-position: -65px;
+}
+.input-area button {
+  width: 15%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #09757a;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.domain-offer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.domain-offer-div:hover {
+  border: 1px solid #eef0f1;
+  background-color: white;
+}
+.domain-offer-div:hover a {
+  border: none;
+  color: #00838C;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+}
+a .domain-price {
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1000px) {
+  .search-section {
+    grid-template-columns: 1fr;
+    width: 98%;
+  }
+  .input-area input {
+    background-image: none;
+    padding-left: 1rem;
+  }
+  .domain-offer-div {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .input-area {
+    padding: 0;
+  }
+  .input-area input {
+    width: 75%;
+    padding: 0;
+    font-size: 1rem;
+    transition: none;
+  }
+  .input-area button {
+    width: 25%;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
