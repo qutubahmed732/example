@@ -1,0 +1,105 @@
+.card-section {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-inline: 4rem;
+
+    .card-section_card-1 {
+        border-radius: 25px;
+        background-image: url("images/card-section-img-1-vertical.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35rem;
+        transition: box-shadow .2s ease-in-out;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        &:hover {
+            box-shadow: .2rem .2rem 1rem .1rem rgba(128, 128, 128, 0.37);
+            transition: box-shadow .2s ease-in-out;
+        }
+
+        .content {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+            p {
+                font-size: 1rem;
+                text-wrap: balance;
+            }
+            
+
+            button {
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 1.1rem;
+                background-color: black;
+                color: white;
+                width: 180px;
+                transition: scale .2s ease;
+
+                &:hover {
+                    transition: scale .2s ease;
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+    .card-section_card-2 {
+        border-radius: 25px;
+        background-image: url("images/card-section-img-2-vertical.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35rem;
+        transition: box-shadow .2s ease-in-out;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &:hover {
+            box-shadow: .2rem .2rem 1rem .1rem rgba(128, 128, 128, 0.37);
+            transition: box-shadow .2s ease-in-out;
+        }
+
+        .content {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            p {
+                font-size: 1rem;
+                text-wrap: balance;
+            }
+
+            p:nth-of-type(2){
+                font-weight: bold;
+            }
+            
+            
+
+            button {
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 1.1rem;
+                background-color: black;
+                color: white;
+                width: 180px;
+                transition: scale .2s ease;
+
+                &:hover {
+                    transition: scale .2s ease;
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}

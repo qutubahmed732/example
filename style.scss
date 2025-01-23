@@ -1,9 +1,17 @@
 @use "navbar";
 @use "input-field";
+@use "hero-section";
+@use "card-section";
+
+@import url("https://db.onlinewebfonts.com/c/0aee6008b82cde991ec28387169bb13e?family=GD+Sherpa+Regular");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "GD Sherpa Regular";
 }
 

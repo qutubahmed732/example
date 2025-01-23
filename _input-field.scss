@@ -92,6 +92,7 @@ a {
 
 @media (max-width: 1000px){
     .search-section{
+        margin: .5rem auto;
         grid-template-columns: 1fr;
         width: 98%;
     }
@@ -110,6 +111,10 @@ a {
 }
 
 @media(max-width: 450px){
+    .search-section {
+        margin: .5rem auto;
+    }
+
     .input-area {
         padding: 0;
         
