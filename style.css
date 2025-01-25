@@ -134,6 +134,7 @@
 @media (max-width: 450px) {
   #second-nav {
     height: 100vh;
+    padding-bottom: 8rem;
   }
 }
 .search-section {
