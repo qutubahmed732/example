@@ -24,7 +24,8 @@ let closee = document.querySelector(".close");
 
 closee.addEventListener("click", () => {
     const nav = document.querySelector("#second-nav");
-    nav.style.left = "-560px"
+    nav.style.left = "-560px";
+    document.body.style.overflow = "auto";
 })
 
 let input = document.querySelector("input");
