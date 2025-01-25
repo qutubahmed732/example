@@ -130,6 +130,11 @@
     display: block;
   }
 }
+@media (max-width: 450px) {
+  #second-nav {
+    height: 100vh;
+  }
+}
 .search-section {
   background-color: #eef0f1;
   border-radius: 10px;
