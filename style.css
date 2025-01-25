@@ -103,22 +103,28 @@
     width: 90%;
     display: none;
   }
+  #second-nav .logo {
+    margin-bottom: 2rem;
+  }
+  #second-nav .logo svg {
+    margin-top: 1rem;
+    width: 50px;
+  }
   #second-nav div ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    font-size: 1.4rem;
   }
   #second-nav > ul {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
   }
-  #second-nav > ul li {
+  #second-nav ul li {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .close {
     display: block;
@@ -395,7 +401,7 @@ a .domain-price {
   margin-inline: 4rem;
 }
 .card-section .card-section_card-1 {
-  border-radius: 25px;
+  border-radius: 10px;
   background-image: url("images/card-section-img-1-vertical.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -434,7 +440,7 @@ a .domain-price {
   scale: 1.1;
 }
 .card-section .card-section_card-2 {
-  border-radius: 25px;
+  border-radius: 10px;
   background-image: url("images/card-section-img-2-vertical.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -476,6 +482,201 @@ a .domain-price {
   scale: 1.1;
 }
 
+@media (max-width: 1000px) {
+  .card-section {
+    grid-template-columns: none;
+    grid-auto-flow: row;
+    margin-inline: 1rem;
+  }
+}
+.center-heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.image {
+  width: 90%;
+  height: 60vh;
+  border-radius: 25px;
+  margin: 2rem auto;
+  background-image: url("images/1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.card-group {
+  width: 90%;
+  display: flex;
+  margin-inline: 3rem;
+}
+.card-group .card {
+  width: 33.3333333333%;
+  padding-block: 1rem;
+}
+.card-group .card .inner-card {
+  width: 95%;
+  height: 100%;
+  padding-inline: 2rem;
+}
+.card-group .card .inner-card:hover {
+  border-radius: 20px;
+  background-color: lightgray;
+}
+.card-group .card h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.card-group .card p {
+  font-size: 1rem;
+}
+
+.button-div {
+  margin: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-div .center-button {
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  cursor: pointer;
+  transition: scale 0.1s ease;
+}
+.button-div .center-button:hover {
+  scale: 105%;
+  transition: scale 0.1s ease;
+}
+
+@media (max-width: 800px) {
+  .center-heading {
+    font-size: 2rem;
+    text-wrap: balance;
+  }
+  .card-group {
+    flex-direction: column;
+  }
+  .card-group .card {
+    width: 100%;
+  }
+  .card-group .hoverable-card-2, .card-group .hoverable-card-3 {
+    display: none;
+  }
+}
+.owner-section1 {
+  padding-block: 2rem;
+  border-radius: 25px;
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+  background-image: url("images/Raheim-Thompson-D.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: left;
+}
+.owner-section1 .about-owner {
+  border-radius: 25px;
+  width: 60%;
+  height: 100%;
+  border: 1px solid white;
+  margin-block: 2rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  padding-inline: 2rem;
+  background-color: white;
+}
+.owner-section1 .about-owner h1 {
+  height: 50%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links {
+  margin-bottom: 2rem;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links .nav-links div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links .nav-links .hover:hover {
+  text-decoration: underline;
+  color: rgb(11, 87, 87);
+  font-size: 1rem;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links .nav-links,
+.owner-section1 .about-owner .owner-image-and-nav-links .owner-image {
+  width: 50%;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links .owner-image {
+  border-radius: 25px;
+  overflow: hidden;
+  width: 50%;
+}
+.owner-section1 .about-owner .owner-image-and-nav-links .owner-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.owner-section2 {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .owner-section1 {
+    display: none;
+  }
+  .owner-section2 {
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .owner-section2 .links {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .owner-section2 .links .hover:hover {
+    text-decoration: underline;
+    color: rgb(11, 87, 87);
+    font-size: 1rem;
+  }
+  .owner-section2 .links span {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .owner-section2 .owner-image {
+    width: 50%;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .owner-section2 .owner-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .owner-section2 .owner-image {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;

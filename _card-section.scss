@@ -6,7 +6,7 @@
     margin-inline: 4rem;
 
     .card-section_card-1 {
-        border-radius: 25px;
+        border-radius: 10px;
         background-image: url("images/card-section-img-1-vertical.webp");
         background-repeat: no-repeat;
         background-size: cover;
@@ -51,8 +51,9 @@
             }
         }
     }
+
     .card-section_card-2 {
-        border-radius: 25px;
+        border-radius: 10px;
         background-image: url("images/card-section-img-2-vertical.webp");
         background-repeat: no-repeat;
         background-size: cover;
@@ -101,5 +102,14 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1000px){
+    .card-section {
+        grid-template-columns: none;
+        grid-auto-flow: row;
+        margin-inline: 1rem;
+
     }
 }

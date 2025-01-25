@@ -1,0 +1,91 @@
+.center-heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.image {
+    width: 90%;
+    height: 60vh;
+    border-radius: 25px;
+    margin: 2rem auto;
+    background-image: url("images/1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-image .2s ease-in-out;
+}
+
+.card-group {
+    width: 90%;
+    display: flex;
+    margin-inline: 3rem;
+
+    .card {
+        width: calc(100% / 3);
+        padding-block: 1rem;
+
+        .inner-card {
+            width: 95%;
+            height: 100%;
+            padding-inline: 2rem;
+
+            &:hover {
+                border-radius: 20px;
+                background-color: lightgray;
+            }
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: .5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.button-div {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .center-button {
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        padding-block: 1rem;
+        padding-inline: 2.5rem;
+        cursor: pointer;
+        transition: scale .1s ease;
+
+        &:hover {
+            scale: 105%;
+            transition: scale .1s ease;
+        }
+    }
+}
+
+@media (max-width: 800px){
+
+    .center-heading {
+        font-size: 2rem;
+        text-wrap: balance;
+    }
+
+    .card-group {
+        flex-direction: column;
+
+        .card {
+            width: 100%;            
+        }
+
+        .hoverable-card-2, .hoverable-card-3{
+            display: none;
+        }
+    }
+}

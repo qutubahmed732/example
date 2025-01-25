@@ -61,11 +61,12 @@
     // gap: 2rem;
     transition: all .5s ease-in;
 
-    ul:nth-of-type(2) li{
+    ul:nth-of-type(2) li {
         display: flex;
         align-items: center;
         gap: 1rem;
     }
+
     ul {
         list-style: none;
     }
@@ -123,27 +124,35 @@
         display: none;
     }
 
-    #second-nav div ul{
+    #second-nav .logo {
+        margin-bottom: 2rem;
+
+        svg {
+            margin-top: 1rem;
+            width: 50px;
+        }
+    }
+
+    #second-nav div ul {
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        font-size: 1.4rem;
     }
 
-    #second-nav > ul {
+    #second-nav>ul {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
     }
 
-    #second-nav > ul li {
+    #second-nav ul li {
         display: flex;
         align-items: center;
         gap: 1rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
-    .close{
+    .close {
         display: block;
     }
 
