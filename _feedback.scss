@@ -36,3 +36,23 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .feedback-cards {
+
+        .feedback-card-1 {
+            width: 100%;
+
+            .stars {
+                display: flex;
+            }
+
+        }
+        .feedback-card-2,
+        .feedback-card-3 {
+            display: none;
+        }
+    }
+
+
+}

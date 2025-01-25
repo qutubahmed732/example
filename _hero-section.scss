@@ -174,4 +174,27 @@
             }
         }
     }
+
+    .button-section {
+
+        li {
+            font-size: .8rem;
+            border-radius: 10px;
+            padding-inline: 5px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .button-section {
+
+        li {
+            font-size: .8rem;
+            border-radius: 10px;
+            padding-inline: 5px;
+            text-align: center;
+        }
+    }
+
 }

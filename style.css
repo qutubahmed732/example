@@ -399,6 +399,20 @@ a .domain-price {
   .hero-section .normal-domain .card-1 p:nth-of-type(2) {
     text-wrap: balance;
   }
+  .button-section li {
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding-inline: 5px;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .button-section li {
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding-inline: 5px;
+    text-align: center;
+  }
 }
 .card-section {
   margin-bottom: 5rem;
@@ -492,7 +506,6 @@ a .domain-price {
 @media (max-width: 1000px) {
   .card-section {
     grid-template-columns: none;
-    grid-auto-flow: row;
     margin-inline: 1rem;
   }
   .card-section .card-section_card-1 {
@@ -757,6 +770,18 @@ a .domain-price {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 900px) {
+  .feedback-cards .feedback-card-1 {
+    width: 100%;
+  }
+  .feedback-cards .feedback-card-1 .stars {
+    display: flex;
+  }
+  .feedback-cards .feedback-card-2,
+  .feedback-cards .feedback-card-3 {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
