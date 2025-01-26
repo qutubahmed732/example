@@ -45,3 +45,25 @@ cards.forEach((card) => {
     });
 });
 
+
+
+// Select all accordion headers
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+// Add click event listener to each header
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    // Close other open accordions
+    accordionHeaders.forEach(h => {
+      if (h !== header) {
+        h.classList.remove('active');
+        h.nextElementSibling.style.display = 'none';
+      }
+    });
+
+    // Toggle current accordion
+    header.classList.toggle('active');
+    const body = header.nextElementSibling;
+    body.style.display = body.style.display === 'block' ? 'none' : 'block';
+  });
+});
