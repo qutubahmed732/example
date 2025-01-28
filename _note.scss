@@ -1,0 +1,20 @@
+.note {
+    margin-block: 5rem;
+    margin-left: 4rem;
+
+    a {
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    p:not(a){
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}
+
+@media(max-width: 600px){
+    .note {
+        margin-inline: 1rem;
+    }
+}

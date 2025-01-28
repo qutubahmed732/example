@@ -13,7 +13,9 @@
     }
 
     h4 {
-        font-size: 1rem;
+        margin-top: 20px;
+        font-size: 2rem;
+        width: 100%;
     }
 }
 
@@ -32,10 +34,11 @@
 }
 
 .accordion-header {
+    text-align: left;
     background: #f7f7f7;
     border: none;
     padding: 15px 20px;
-    font-size: 1.4rem;
+    font-size: clamp(.5rem, 2vw, 1.5rem);
     font-weight: bold;
     color: #000;
     cursor: pointer;
@@ -80,6 +83,7 @@
 @media (max-width: 800px){
     .accordion-section {
         h1 {
+            width: 95%;
             font-size: 2rem;
         }
     }
@@ -90,6 +94,7 @@
         .accordion-header {
             font-size: 1rem;
             text-align: left;
+            font-weight: 550;
 
             .icon {
                 font-size: 1.1rem;

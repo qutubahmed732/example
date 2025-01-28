@@ -549,6 +549,7 @@ a .domain-price {
 .center-heading {
   text-align: center;
   font-size: 3rem;
+  width: 100%;
 }
 
 .image {
@@ -590,7 +591,7 @@ a .domain-price {
 }
 
 .button-div {
-  margin: 2rem 2rem;
+  margin: 4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -613,6 +614,7 @@ a .domain-price {
 
 @media (max-width: 800px) {
   .center-heading {
+    margin: -55px;
     font-size: 2rem;
     text-wrap: balance;
   }
@@ -927,7 +929,6 @@ a .domain-price {
   }
   .guide-section .content-2 {
     visibility: hidden;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -967,7 +968,9 @@ a .domain-price {
   font-size: 3rem;
 }
 .accordion-section h4 {
-  font-size: 1rem;
+  margin-top: 20px;
+  font-size: 2rem;
+  width: 100%;
 }
 
 .accordion-container {
@@ -983,10 +986,11 @@ a .domain-price {
 }
 
 .accordion-header {
+  text-align: left;
   background: #f7f7f7;
   border: none;
   padding: 15px 20px;
-  font-size: 1.4rem;
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
   font-weight: bold;
   color: #000;
   cursor: pointer;
@@ -1030,6 +1034,7 @@ a .domain-price {
 
 @media (max-width: 800px) {
   .accordion-section h1 {
+    width: 95%;
     font-size: 2rem;
   }
   .accordion-container {
@@ -1038,9 +1043,28 @@ a .domain-price {
   .accordion-container .accordion-header {
     font-size: 1rem;
     text-align: left;
+    font-weight: 550;
   }
   .accordion-container .accordion-header .icon {
     font-size: 1.1rem;
+  }
+}
+.note {
+  margin-block: 5rem;
+  margin-left: 4rem;
+}
+.note a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.note p:not(a) {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .note {
+    margin-inline: 1rem;
   }
 }
 * {
