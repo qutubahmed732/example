@@ -4,7 +4,7 @@
     margin: 2rem auto;
     padding-block: .5rem;
     padding-inline: .5rem;
-    width: 90%;
+    width: 90%   ;
     display: grid;
     grid-template-columns: 5fr 1fr;
     gap: .5rem;
@@ -116,19 +116,21 @@ a {
     }
 
     .input-area {
-        padding: 0;
+        width: 100%;
         
         input {
             width: 75%;
             padding: 0;
             font-size: 1rem;
             transition: none;
+            padding-left: 12px;
         }
 
         button {
             width: 25%;
             font-size: .9rem;
             font-weight: normal;
+            padding-block: 5px;
         }
     }
 }
