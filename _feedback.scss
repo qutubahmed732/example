@@ -38,10 +38,20 @@
 }
 
 @media (max-width: 900px) {
-    .feedback-cards {
 
+    .container-heading {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0rem !important;
+        text-align: center;
+    }
+
+    .feedback-cards {
+        padding-inline: 0rem;
+        
         .feedback-card-1 {
-            width: 100%;
+            width: 100vw;
+            border: 1px solid purple;
 
             .stars {
                 display: flex;

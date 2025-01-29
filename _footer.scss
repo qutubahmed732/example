@@ -126,7 +126,7 @@
 
 // media - querry
 
-@media(max-width: 990px){
+@media(max-width: 990px) {
     .list-container {
         margin-inline: 3rem;
         flex-direction: column;
@@ -141,6 +141,7 @@
         .show i {
             display: block;
         }
+
         .hide {
             display: none;
         }
@@ -154,7 +155,7 @@
             width: 100%;
             align-self: flex-start;
 
-            span:nth-of-type(2){
+            span:nth-of-type(2) {
                 margin-left: auto;
                 margin-right: 0;
             }
@@ -166,11 +167,11 @@
     }
 }
 
-@media(max-width: 650px){
+@media(max-width: 650px) {
     .currency-section {
         flex-direction: column;
 
-        span:nth-of-type(2){
+        span:nth-of-type(2) {
             margin-left: 0 !important;
             margin-right: auto !important;
         }
@@ -187,13 +188,15 @@
             flex-direction: column;
             align-items: center;
 
-                a {
-                    padding-left: 8rem;
-                }
+            a {
+                padding-left: 8rem;
+            }
         }
 
         .second-div {
             flex: none;
+            text-wrap: balance;
+            text-align: left !important;
         }
     }
 }

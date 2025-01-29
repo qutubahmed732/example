@@ -618,13 +618,21 @@ a .domain-price {
     text-wrap: balance;
   }
   .card-group {
+    margin-top: 0rem;
     flex-direction: column;
+    margin-inline: auto;
   }
   .card-group .card {
     width: 100%;
   }
+  .card-group .hoverable-card-1 {
+    border: 1px solid red;
+  }
   .card-group .hoverable-card-2, .card-group .hoverable-card-3 {
     display: none;
+  }
+  .general-siblings .image {
+    margin-top: -10px;
   }
 }
 .owner-section1 {
@@ -782,8 +790,18 @@ a .domain-price {
 }
 
 @media (max-width: 900px) {
-  .feedback-cards .feedback-card-1 {
+  .container-heading {
+    margin-top: 2rem;
     width: 100%;
+    padding: 0rem !important;
+    text-align: center;
+  }
+  .feedback-cards {
+    padding-inline: 0rem;
+  }
+  .feedback-cards .feedback-card-1 {
+    width: 100vw;
+    border: 1px solid purple;
   }
   .feedback-cards .feedback-card-1 .stars {
     display: flex;
@@ -952,6 +970,9 @@ a .domain-price {
   .guide-section .content-2 {
     margin: 10px auto;
     width: 95%;
+  }
+  .guide-name {
+    display: none;
   }
 }
 .accordion-section {
@@ -1229,6 +1250,8 @@ a .domain-price {
   }
   .copyright-text .second-div {
     flex: none;
+    text-wrap: balance;
+    text-align: left !important;
   }
 }
 * {

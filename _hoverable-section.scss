@@ -77,16 +77,26 @@
         font-size: 2rem;
         text-wrap: balance;
     }
-
+    
     .card-group {
+        margin-top: 0rem;
         flex-direction: column;
+        margin-inline: auto;
 
         .card {
-            width: 100%;            
+            width: 100%;        
+        }
+
+        .hoverable-card-1 {
+            border: 1px solid red;
         }
 
         .hoverable-card-2, .hoverable-card-3{
             display: none;
         }
+    }
+
+    .general-siblings .image{
+        margin-top: -10px;
     }
 }
