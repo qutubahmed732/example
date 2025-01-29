@@ -614,7 +614,6 @@ a .domain-price {
 
 @media (max-width: 800px) {
   .center-heading {
-    margin: -55px;
     font-size: 2rem;
     text-wrap: balance;
   }
