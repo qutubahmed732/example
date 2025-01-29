@@ -35,7 +35,7 @@
 
 .accordion-header {
     text-align: left;
-    background: #f7f7f7;
+    background: #ffffff;
     border: none;
     padding: 15px 20px;
     font-size: clamp(.5rem, 2vw, 1.5rem);
@@ -57,14 +57,15 @@
     background: #e3e3e3;
 }
 
-.accordion-header .icon {
+.accordion-header .icon i{
     font-size: 2rem;
     font-weight: bold;
     transition: transform 0.3s;
+    color: #555;
 }
 
-.accordion-header.active .icon {
-    transform: rotate(45deg);
+.accordion-header.active .icon i{
+    transform: rotate(180deg);
 }
 
 .accordion-body {
@@ -76,8 +77,10 @@
     border-top: 1px solid #e5e5e5;
 }
 
-.accordion-body p {
+.accordion-body div {
     margin: 0;
+    color: black;
+    font-size: clamp(.8rem, 2vw, 1.1rem);
 }
 
 @media (max-width: 800px){
